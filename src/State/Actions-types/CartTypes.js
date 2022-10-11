@@ -1,0 +1,9 @@
+export const ADD_CART_ITEMS = 'ADD_CART_ITEMS'
+
+export const DELETE_CART_ITEMS = 'DELETE_CART_ITEMS'
+
+export const ADD_SHIPPING_ADDRESS = 'ADD_SHIPPING_ADDRESS'
+
+export const SAVE_PAYMENT = 'SAVE_PAYMENT'
+
+export const RESET_CART = 'RESET_CART'

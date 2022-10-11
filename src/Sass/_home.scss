@@ -1,0 +1,436 @@
+.brand {
+    background-color: #f7f7f7;
+    min-height: 67vh;
+    margin-top: 0px;
+    position: relative;
+
+        .container {
+            min-height: 67vh;
+            display: flex;
+            align-items: center;
+            padding-bottom: 100px;
+
+            .text {
+                text-align: left;
+                position: relative;
+                flex: 1;
+
+                h4 {
+                    font-family: 'Ubuntu';
+                    font-style: normal;
+                    font-weight: 400;
+                    font-size: 25px;
+                    line-height: 29px;
+                    letter-spacing: 0.105em;
+                    color: $smoothGray;
+                }
+
+                h2 {
+                    font-family: 'Ubuntu';
+                    font-style: normal;
+                    font-weight: 500;
+                    font-size: 70px;
+                    line-height: 80px;
+                    word-break: break-word;
+                    width: 89%;
+                }
+            }
+        }
+}
+
+
+.head-content {
+    width: 100%;
+    margin: 44px auto;
+    text-align: left;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    h3 {
+        font-style: normal;
+        font-weight: 400;
+        font-size: 25px;
+        line-height: 29px;
+        letter-spacing: 0.105em;
+        color: $smoothGray;
+    }
+}
+
+.items-container {
+    margin-top: 30px;
+    height: 200px;
+    align-items: center;
+    display: flex;
+    z-index: 999;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    margin: auto;
+
+    .item {
+        transform: none;
+        display: flex;
+        align-items: center;
+        margin-left: 12px;
+
+        .inner-item {
+            order: 2;
+            margin-left: 12px;
+            display: flex;
+            flex-direction: column;
+            align-items: flex-start;
+
+                h4 {
+                    font-weight: bold;
+                    font-size: 20px;
+                    letter-spacing: 2px;
+                    color: #666666;
+                }
+
+                h6 {
+                    color: $smoothGray;
+                    font-size: 14px;
+                    letter-spacing: .5px;
+                    font-weight: normal;
+                }
+        }
+
+        .icon-item {
+            color: #B0DC96;
+            font-size: 35px;
+        }
+    }
+}
+
+
+
+.bCards {
+    margin: 50px 0 50px 0;
+    .container {
+        // display: flex;
+        // justify-content: space-between;
+        // flex-direction: column;
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+        gap: 30px;
+
+        .bCard {
+            display: flex;
+            align-items: flex-start;
+            background-color: #6CDDFF;
+            padding: 12px;
+            border-radius: 7px;
+
+            .text-bCard {
+                order: 1;
+                display: flex;
+                flex-direction: column;
+                align-items: flex-start;
+                margin-top: 29px;
+
+                h3 {
+                    font-size: 2rem;
+                    color: #fff;
+                    margin-bottom: 17px;
+                }
+
+                h5 {
+                    font-style: normal;
+                    font-weight: 500;
+                    font-size: 20px;
+                    line-height: 29px;
+                    color: $grayColor2;
+                }
+
+                button {
+                    border: 1px solid #fff;
+                    margin: 20px 0 20px 6px;
+                    padding: 11px 32px;
+                    border-radius: 100px;
+                    background-color: white;
+                    font-size: 15px;
+                    font-weight: bold;
+                    font-style: italic;
+                    color: #555;
+                    cursor: pointer;
+                    transition: $minTransition;
+
+                    &:hover {
+                        background-color: transparent;
+                        color: #fff;
+                    }
+                }
+            }
+
+            img {
+                width: 218px;
+            }
+        }
+        .bCard-2 {
+            display: flex;
+            align-items: flex-start;
+            background-color: $yellowColor2;
+            padding: 12px;
+            border-radius: 7px;
+
+            .text-bCard {
+                order: 1;
+                display: flex;
+                flex-direction: column;
+                align-items: flex-start;
+                margin-top: 29px;
+
+                h3 {
+                    font-size: 1.8rem;
+                    color: #fff;
+                    margin-bottom: 17px;
+                }
+
+                h5 {
+                    font-style: normal;
+                    font-weight: 500;
+                    font-size: 20px;
+                    line-height: 29px;
+                    color: $white;
+                }
+
+                button {
+                    border: 1px solid #fff;
+                    margin: 20px 0 20px 6px;
+                    padding: 11px 32px;
+                    border-radius: 100px;
+                    background-color: white;
+                    font-size: 15px;
+                    font-weight: bold;
+                    font-style: italic;
+                    color: #555;
+                    cursor: pointer;
+                    transition: $minTransition;
+
+                    &:hover {
+                        background-color: transparent;
+                        color: #fff;
+                    }
+                }
+            }
+
+            img {
+                width: 218px;
+            }
+        }
+    }
+}
+
+.brands {
+    margin-bottom: 125px;
+    margin-top: 125px;
+
+    .container {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+
+        .inner {
+            width: 93%;
+            background-color: #004743;
+            padding: 25px;
+            border-radius: 7px;
+
+                .head-brands {
+                    color: $white;
+
+                    h2 {
+                        font-size: 2.4rem;
+                        margin-bottom: 15px
+                    }
+
+                    h4 {
+                        margin-top: 21px;
+                        font-family: 'Ubuntu';
+                        font-style: normal;
+                        font-weight: 400;
+                        font-size: 20px;
+                        line-height: 23px;
+
+                        span {
+                            color: $yellowColor2;
+                        }
+                    }
+                }
+        }
+    }
+}
+
+.brand-body {
+    margin: 40px 0 40px;
+    display: flex;
+    justify-content: space-evenly;
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 30px;
+
+    .body-item {
+        background-color: #fff;
+        padding: 12px 16px;
+        width: 166px;
+        height: 80px;
+        display: flex;
+        align-items: center;
+        border-radius: 12px;
+    }
+}
+
+.trending {
+    margin: 85px 0 85px 0;
+
+    .head-trending {
+        h2 {
+            font-style: normal;
+            font-weight: 700;
+            font-size: 60px;
+            line-height: 69px;
+        }
+
+        h4 {
+            font-style: normal;
+            font-weight: 400;
+            font-size: 20px;
+            line-height: 23px;
+            color: $smoothGray;
+        }
+    }
+
+    .loading-container {
+        margin-top: 31px;
+    }
+
+    .container {
+        margin-top: 45px;
+        display: grid;
+        grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+        gap: 50px;
+
+        .inner-container {
+            .head-img {
+                border: 1px solid #f0f0f0;
+                border-radius: 7px;
+                padding: 2px;
+                width: 400px;
+                height: 260px;
+                background-color: #eee;
+                position: relative;
+
+                    img {
+                        position: absolute;
+                        left: 50%;
+                        transform: translate(-50%, -50%);
+                        top: 50%;
+                        width: 95%;
+                        border-radius: 7px;
+                        height: 100%;
+                        object-fit: contain;
+                    }
+            }
+
+            .cat-rate {
+                display: flex;
+                justify-content: space-between;
+                padding: 8px;
+
+                h4 {
+                    font-family: 'Ubuntu';
+                    font-style: normal;
+                    font-weight: 400;
+                    font-size: 20px;
+                    line-height: 21px;
+                    color: $smoothGray;
+                }
+
+                .rate {
+                    display: flex;
+                    align-items: center;
+
+                    h5 {
+                        font-size: 20px;
+                        font-weight: bold;
+                        font-style: italic;
+                        margin-right: 8px;
+                        color: #FBD103;
+                    }
+
+                    .rate-icon {
+                        font-size: 21px;
+                        color: #FBD103;
+                    }
+                }
+            }
+
+            .details {
+                display: flex;
+                margin-top: -4px;
+                padding: 8px;
+                flex-direction: column;
+                align-items: flex-start;
+
+                    h3 {
+                        margin-bottom: 11px;
+                        font-family: 'Ubuntu';
+                        font-style: normal;
+                        font-weight: 500;
+                        font-size: 24px;
+                        line-height: 28px;
+                    }
+
+                    h4 {
+                        font-family: 'Ubuntu';
+                        font-style: normal;
+                        font-weight: 700;
+                        font-size: 30px;
+                        line-height: 34px;
+                        color: #74CA4D;
+                    }
+            }
+        }
+    }
+}
+
+.top-side {
+    
+    .img {
+        width: 108px;
+        margin: 20px auto;
+        background-color: #D7E5F0;
+        padding: 17px;
+        border-radius: 100px;
+          img {
+              width: 100%;
+          }
+    }
+
+    .body {
+        margin-bottom: 12px;
+
+        h2 {
+            font-family: 'Ubuntu';
+            font-style: normal;
+            font-weight: 700;
+            font-size: 56px;
+            line-height: 69px;
+        }
+
+        h4 {
+            font-family: 'Ubuntu';
+            font-style: normal;
+            font-weight: 400;
+            font-size: 20px;
+            line-height: 27px;
+            color: #949494;
+            width: 405px;
+            margin: auto;
+            letter-spacing: 1px;
+        }
+
+        
+    }
+}
+

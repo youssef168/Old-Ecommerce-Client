@@ -1,0 +1,139 @@
+.container {
+    // margin-top: 25px;
+
+        .container-in {
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+
+            .right-side {
+                flex: 1 1 50%;
+                margin-left: 51px;
+
+                h2 {
+                    font-size: 2.2rem;
+                    text-align: start;
+                    font-weight: normal;
+                    text-transform: uppercase;
+                    color: #4f4f4f;
+                    width: fit-content;
+                    margin-bottom: 15px;
+                }
+
+                .shopping-items {
+
+                    .shopping-item {
+                        display: flex;
+                        width: 100%;
+                        justify-content: space-evenly;
+                        border: 1px solid #ccc;
+                        padding: 10px 17px;
+                        border-radius: 7px;
+                        align-items: center;
+                        margin-bottom: 22px;
+
+                            .sh-img {
+                                width: 15%;
+                                border-radius: 7px;
+                                /* height: 100%; */
+                                object-fit: contain;
+                            }
+
+                            .sh-details {
+                                display: flex;
+                                justify-content: space-around;
+                                width: 100%;
+                                height: 100% !important;
+                                align-items: center;
+
+                                .sh-title {
+                                    h3 {
+                                        font-size: 20px;
+                                        font-weight: normal;
+                                        letter-spacing: 1px;
+                                        color: #444;
+                                    }
+                                }
+
+                                .sh-price {
+                                    h4 {
+                                        font-size: 18px;
+                                        font-weight: bold;
+                                        color: #74CA4D;
+                                    }
+                                }
+
+                                .sh-qty {
+                                    select {
+                                        border: 1px solid #ccc;
+                                        outline: none;
+                                        padding: 3px 11px;
+                                        border-radius: 7px;
+                                        background-color: #f2f2f2;
+                                        color: #555;
+                                    }
+                                }
+
+                                .trash-item {
+                                    svg {
+                                        font-size: 18px;
+                                        color: #555;
+                                        cursor: pointer;
+                                    }
+                                }
+                            }
+                    }
+                }
+            }
+            .left-side {
+                flex: 1 1 50%;
+
+                    .box {
+                        width: 62%;
+                        margin: auto;
+                        border: 1px solid #ccc;
+                        padding: 29px;
+                        border-radius: 10px;
+
+                        .b-title-price {
+                            margin-bottom: 12px;
+                            display: flex;
+                            flex-direction: column;
+                            margin-top: -14px;
+                            /* width: 100% !important; */
+                            align-items: flex-start;
+
+                                h2 {
+                                    margin-bottom: 4px;
+                                    font-size: 24px;
+                                    text-transform: uppercase;
+                                    letter-spacing: 3px;
+                                    font-weight: normal;
+                                    color: #333;
+                                }
+
+                                h4 {
+                                    font-size: 18px;
+                                    font-weight: 300;
+                                    color: #555;
+                                    letter-spacing: 2px;
+                                }
+                        }
+
+                        button {
+                            width: 100%;
+                            background-color: #323232;
+                            padding: 10px 0;
+                            border-radius: 7px;
+                            color: #fff;
+                            font-size: 16px;
+                            letter-spacing: 2px;
+                            text-transform: uppercase;
+                            cursor: pointer;
+                            margin-bottom: -14px;
+                            margin-top: 8px;
+                        }
+                    }
+            }
+        }
+}

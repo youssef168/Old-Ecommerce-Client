@@ -1,0 +1,48 @@
+.body-side {
+    margin-top: 35px;
+
+        .side-pieces {
+            display: flex;
+            flex-direction: column;
+
+                .side-piece {
+                    display: flex;
+                    flex-direction: column;
+                    width: 100%;
+                    text-align: start;
+                    margin-bottom: 22px;
+                    border-bottom: 1px solid #ccc;
+
+                    .head-piece {
+                        margin-bottom: 12px;
+
+                        h3 {
+                            font-size: 2.1rem;
+                            letter-spacing: 4px;
+                            text-transform: uppercase;
+                            color: #444;
+                        }
+                    }
+
+                    .body-piece {
+                        h5 {
+                            font-size: 16px;
+                            letter-spacing: 1.6px;
+                            color: #666;
+                            margin-bottom: 9px;
+                        }
+
+                        div {
+                            margin-top: 12px;
+                            margin-bottom: 12px;
+                        }
+                        
+                        .item-piece {
+                            display: flex;
+                            justify-content: space-between;
+                            width: 80%;
+                        }
+                    }
+                }
+        }
+}
